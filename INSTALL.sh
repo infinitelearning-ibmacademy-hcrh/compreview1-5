@@ -6,8 +6,8 @@ git clone https://github.com/infinitelearning-ibmacademy-hcrh/compreview1-5.git 
 sudo cp /tmp/sh/lab.sh /usr/bin/lab &>/dev/null
 sudo chmod a+x /usr/bin/lab &>/dev/null
 sudo rm -rf /tmp/sh &>/dev/null
- useradd student &>/dev/null
-echo "student" | passwd --stdin student &>/dev/null
-su - student &>/dev/null
+useradd student &>/dev/null
+echo "student" | passwd --stdin student 
+su - student 
 echo -e "\e[1;42;97m LAB INSTALLED, YOU CAN LAB START NOW !! \e[0m"
 echo ""
