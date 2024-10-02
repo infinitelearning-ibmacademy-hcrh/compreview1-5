@@ -85,9 +85,6 @@ print_header
 if [ "$1" == "start" ]; then
         student_data
         if [ "$2" == "compreview1-5" ]; then
-            useradd student &>/dev/null
-            echo "student" | passwd --stdin student &>/dev/null
-            su - student &>/dev/null
             echo "REMOVE_THIS_LINE" > /home/student/task4.txt
             echo "email=example@infinitelearningstudent.id" >> /home/student/task4.txt
             echo "#infinitelearning" >> /home/student/task4.txt
