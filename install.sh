@@ -1,10 +1,3 @@
-#!/bin/bash
-sudo dnf install git -y &>/dev/null
-sudo mkdir -p /tmp/sh &>/dev/null
-sudo chmod 777 /tmp/sh  &>/dev/null
-git clone https://github.com/infinitelearning-ibmacademy-hcrh/compreview1-5.git /tmp/sh &>/dev/null
-sudo cp /tmp/sh/lab.sh /usr/bin/lab &>/dev/null
-sudo chmod a+x /usr/bin/lab &>/dev/null
-sudo rm -rf /tmp/sh &>/dev/null
-echo -e "\e[1;42;97m LAB INSTALLED, YOU CAN LAB START NOW !! \e[0m"
-echo ""
+z="
+";Cz=' ins';Bz=' dnf';iz='maca';Nz='h &>';tz='lab.';gz='rnin';Mz='mp/s';Yz='e ht';CBz='-rf ';FBz='"\e[';fz='elea';Vz='sh  ';TBz='0m"';ABz='+x /';Pz='/nul';bz='thub';oz='1-5.';Fz=' -y ';az='//gi';Az='sudo';Ez=' git';Dz='tall';RBz='W !!';kz='-hcr';Oz='/dev';qz='/sh ';Tz='77 /';hz='g-ib';GBz='1;42';wz='bin/';EBz=' -e ';Hz='ev/n';KBz='TALL';pz='/tmp';PBz='STAR';jz='demy';Qz='l';Sz='od 7';yz='od a';MBz='YOU ';cz='.com';vz='usr/';dz='/inf';HBz=';97m';Iz='ull';mz='mpre';xz='lab ';sz='/sh/';QBz='T NO';Xz='clon';UBz=' ""';LBz='ED, ';Jz=' mkd';lz='h/co';Lz='p /t';uz='sh /';OBz='LAB ';DBz='echo';Zz='tps:';nz='view';rz=' cp ';IBz=' LAB';Gz='&>/d';JBz=' INS';Rz=' chm';Uz='tmp/';NBz='CAN ';BBz=' rm ';Wz='git ';Kz='ir -';ez='init';SBz=' \e[';
+eval "$Az$Bz$Cz$Dz$Ez$Fz$Gz$Hz$Iz$z$Az$Jz$Kz$Lz$Mz$Nz$Oz$Pz$Qz$z$Az$Rz$Sz$Tz$Uz$Vz$Gz$Hz$Iz$z$Wz$Xz$Yz$Zz$az$bz$cz$dz$ez$fz$gz$hz$iz$jz$kz$lz$mz$nz$oz$Wz$pz$qz$Gz$Hz$Iz$z$Az$rz$pz$sz$tz$uz$vz$wz$xz$Gz$Hz$Iz$z$Az$Rz$yz$ABz$vz$wz$xz$Gz$Hz$Iz$z$Az$BBz$CBz$pz$qz$Gz$Hz$Iz$z$DBz$EBz$FBz$GBz$HBz$IBz$JBz$KBz$LBz$MBz$NBz$OBz$PBz$QBz$RBz$SBz$TBz$z$DBz$UBz"
