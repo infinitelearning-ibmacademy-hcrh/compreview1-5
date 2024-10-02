@@ -7,7 +7,6 @@ sudo cp /tmp/sh/lab.sh /usr/bin/lab &>/dev/null
 sudo chmod a+x /usr/bin/lab &>/dev/null
 sudo rm -rf /tmp/sh &>/dev/null
 useradd student &>/dev/null
-echo "student" | passwd --stdin student  &>/dev/null
 su - student 
 
 
