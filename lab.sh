@@ -85,9 +85,9 @@ print_header
 if [ "$1" == "start" ]; then
         student_data
         if [ "$2" == "compreview1-5" ]; then
-            echo "REMOVE_THIS_LINE" > /home/student/task4.txt
-            echo "email=example@infinitelearningstudent.id" >> /home/student/task4.txt
-            echo "#infinitelearning" >> /home/student/task4.txt
+            echo "REMOVE_THIS_LINE" > /root/task4.txt
+            echo "email=example@infinitelearningstudent.id" >> /root/task4.txt
+            echo "#infinitelearning" >> /root/task4.txt
             echo -e "\e[1;42;97mLAB STARTED, Good Luck !!\e[0m"
             echo ""
         else
@@ -96,7 +96,7 @@ if [ "$1" == "start" ]; then
 elif [ "$1" == "grade" ]; then
         if [ "$2" == "compreview1-5" ]; then
             echo -ne "task1.txt first line is current year ...."
-            cat  /home/student/task1.txt | sed -n '1p' | grep "2024" &>/dev/null
+            cat  /root/task1.txt | sed -n '1p' | grep "2024" &>/dev/null
             if [ $? -eq 0 ];then
                 pass
                 score=$(( score + 1 ))
@@ -104,7 +104,7 @@ elif [ "$1" == "grade" ]; then
                 fail
             fi
             echo -ne "task1.txt second line is current user ...."
-            cat  /home/student/task1.txt | sed -n '1p' | grep "student" &>/dev/null
+            cat  /root/task1.txt | sed -n '1p' | grep "student" &>/dev/null
             if [ $? -eq 0 ];then
                 pass
                 score=$(( score + 1 ))
@@ -112,7 +112,7 @@ elif [ "$1" == "grade" ]; then
                 fail
             fi
             echo -ne "task1.txt third line is current working directory ...."
-            cat  /home/student/task1.txt | sed -n '1p' | grep "/home/student" &>/dev/null
+            cat  /root/task1.txt | sed -n '1p' | grep "/home/student" &>/dev/null
             if [ $? -eq 0 ];then
                 pass
                 score=$(( score + 1 ))
@@ -120,7 +120,7 @@ elif [ "$1" == "grade" ]; then
                 fail
             fi
             echo -ne "Check task2.txt content ...."
-            cat  /home/student/task2.txt | wc -l | grep "5" &>/dev/null
+            cat  /root/task2.txt | wc -l | grep "5" &>/dev/null
             if [ $? -eq 0 ];then
                 pass
                 score=$(( score + 1 ))
@@ -128,7 +128,7 @@ elif [ "$1" == "grade" ]; then
                 fail
             fi
             echo -ne "Check task3.txt content ...."
-            cat  /home/student/task3.txt | wc -l | grep "5" &>/dev/null
+            cat  /root/task3.txt | wc -l | grep "5" &>/dev/null
             if [ $? -eq 0 ];then
                 pass
                 score=$(( score + 1 ))
@@ -144,7 +144,7 @@ elif [ "$1" == "grade" ]; then
                 fail
             fi
             echo -ne "Check folder1 directory content ...."
-            ls /home/student/project_plans/folder1 | wc -l | grep "12" &>/dev/null
+            ls /root/project_plans/folder1 | wc -l | grep "12" &>/dev/null
             if [ $? -eq 0 ];then
                 pass
                 score=$(( score + 1 ))
@@ -152,7 +152,7 @@ elif [ "$1" == "grade" ]; then
                 fail
             fi
             echo -ne "Check folder2/season1 directory content ...."
-            ls /home/student/project_plans/folder2/season1 | wc -l | grep "6" &>/dev/null
+            ls /root/project_plans/folder2/season1 | wc -l | grep "6" &>/dev/null
             if [ $? -eq 0 ];then
                 pass
                 score=$(( score + 1 ))
@@ -160,7 +160,7 @@ elif [ "$1" == "grade" ]; then
                 fail
             fi
             echo -ne "Check folder2/season2 directory content ...."
-            ls /home/student/project_plans/folder2/season2 | wc -l | grep "6" &>/dev/null
+            ls /root/project_plans/folder2/season2 | wc -l | grep "6" &>/dev/null
             if [ $? -eq 0 ];then
                 pass
                 score=$(( score + 1 ))
@@ -178,7 +178,7 @@ elif [ "$1" == "grade" ]; then
 
             email=$(cat /tmp/.email)
             echo -ne "Check task4.txt content ...."
-            cat  /home/student/task4.txt | grep ${email} &>/dev/null
+            cat  /root/task4.txt | grep ${email} &>/dev/null
             if [ $? -eq 0 ];then
                 pass
                 score=$(( score + 1 ))
@@ -186,7 +186,7 @@ elif [ "$1" == "grade" ]; then
                 fail
             fi
             echo -ne "Check removed line in task4.txt ...."
-            cat  /home/student/task4.txt | wc -l | grep "2" &>/dev/null
+            cat  /root/task4.txt | wc -l | grep "2" &>/dev/null
             if [ $? -eq 0 ];then
                 pass
                 score=$(( score + 1 ))
